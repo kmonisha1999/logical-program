@@ -1,0 +1,97 @@
+*{
+    margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+	width:85%;
+	margin:auto;
+}
+.first button{
+    margin-top:30px;
+    margin-bottom:30px;
+	
+}
+
+ #main{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius:50%;
+        }
+       .num_box{
+        position: relative;
+        width:24%;
+        height:150px;
+        text-align: center;
+        border:1px solid black;
+        line-height: 150px;
+        margin-bottom: 30px;
+       }
+       .num_box::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: blue;
+       }
+       .num_box.activeBox::after{
+             background-color: transparent;
+       }
+       .num_box.successBox{
+             background-color: green;
+             color:white;
+       }
+       .successBox::after{
+           background-color: transparent;
+       }
+       body{
+        text-align: center;
+       }
+/* #main{ */
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	/* justify-content: space-between; */
+	/* } */
+/* .num_box{ */
+	/* position: relative; */
+	/* width: 23%; */
+	/* height: 150px; */
+	/* text-align: center; */
+	/* border: 1px solid blueviolet; */
+	/* line-height: 150px; */
+	/* margin-bottom: 30px; */
+	/* } */
+/* .num_box::after{ */
+	/* content: ""; */
+	/* position: absolute; */
+	/* left: 0; */
+	/* top: 0; */
+	/* right: 0; */
+	/* bottom: 0; */
+	/* background-color: brown; */
+	/* } */
+/* .num_box::after{ */
+	/* content: ""; */
+	/* position: absolute; */
+	/* left: 0; */
+	/* right: 0; */
+	/* top: 0; */
+	/* bottom: 0; */
+	/* background-color: aqua; */
+	/* } */
+/* .num_box.activeBox::after{ */
+	/* background-color: transparent; */
+	/* } */
+/* .num_box.successbox{ */
+	/* background-color: yellowgreen; */
+	/* color:white; */
+/* } */
+/* .successbox::after{ */
+	/* background-color: transparent; */
+			/* } */
+/* .body{ */
+	/* text-align: center; */
+	/* } */
