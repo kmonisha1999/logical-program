@@ -7,91 +7,65 @@
 	width:85%;
 	margin:auto;
 }
+ body{
+    text-align: center;
+}
 .first button{
     margin-top:30px;
     margin-bottom:30px;
+}
+.second{
+    width:80%;
+	border:1px solid red;
+	margin:auto;
+}
+.second h1{
+	margin-top:30px;
 	
 }
-
  #main{
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            border-radius:50%;
-        }
-       .num_box{
-        position: relative;
-        width:24%;
-        height:150px;
-        text-align: center;
-        border:1px solid black;
-        line-height: 150px;
-        margin-bottom: 30px;
-       }
-       .num_box::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background-color: blue;
-       }
-       .num_box.activeBox::after{
-             background-color: transparent;
-       }
-       .num_box.successBox{
-             background-color: green;
-             color:white;
-       }
-       .successBox::after{
-           background-color: transparent;
-       }
-       body{
-        text-align: center;
-       }
-/* #main{ */
-	/* display: flex; */
-	/* flex-wrap: wrap; */
-	/* justify-content: space-between; */
-	/* } */
-/* .num_box{ */
-	/* position: relative; */
-	/* width: 23%; */
-	/* height: 150px; */
-	/* text-align: center; */
-	/* border: 1px solid blueviolet; */
-	/* line-height: 150px; */
-	/* margin-bottom: 30px; */
-	/* } */
-/* .num_box::after{ */
-	/* content: ""; */
-	/* position: absolute; */
-	/* left: 0; */
-	/* top: 0; */
-	/* right: 0; */
-	/* bottom: 0; */
-	/* background-color: brown; */
-	/* } */
-/* .num_box::after{ */
-	/* content: ""; */
-	/* position: absolute; */
-	/* left: 0; */
-	/* right: 0; */
-	/* top: 0; */
-	/* bottom: 0; */
-	/* background-color: aqua; */
-	/* } */
-/* .num_box.activeBox::after{ */
-	/* background-color: transparent; */
-	/* } */
-/* .num_box.successbox{ */
-	/* background-color: yellowgreen; */
-	/* color:white; */
-/* } */
-/* .successbox::after{ */
-	/* background-color: transparent; */
-			/* } */
-/* .body{ */
-	/* text-align: center; */
-	/* } */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;        
+}
+.num_box{
+    position: relative;
+    width:23%;
+    height:150px;
+    text-align: center;
+    line-height: 150px;
+    margin-bottom: 30px;
+	font-size:30px;
+	font-weight:bold;
+	background-color:#FDB9C8;
+	border-radius:20px;
+}
+ .num_box::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color:#FF69B4;
+	border-radius:20px; 
+}
+.num_box.activeBox::after{
+    background-color: transparent;
+}
+.num_box.successBox{
+    background-color: green;
+    color:white;
+}
+.successBox::after{
+    background-color: transparent;
+}
+.btn-design{
+    border:none;
+	height:50px;
+	width:150px;
+	font-size:20px;
+	background-color:#d90166;
+	color:white;
+	border-radius:22px;
+}
